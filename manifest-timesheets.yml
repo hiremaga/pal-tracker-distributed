@@ -2,10 +2,10 @@ applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
-  - route: https://pal-ah-timesheets.run.pivotal.io
+  - route: https://pal-ah-timesheets.cfapps.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://pal-ah-registration.run.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: https://pal-ah-registration.cfapps.io
   services:
   - tracker-timesheets-database
